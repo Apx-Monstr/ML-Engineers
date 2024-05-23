@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import axios from "axios"
 
 interface Data{
@@ -59,7 +59,8 @@ const Table = () => {
                         {/* <td className="border px-4 py-2">{new Intl.NumberFormat().format(123456789)}</td> */}
                         <td className="border px-8 py-4">{item.work_year}</td>
                         <td className="border px-8 py-4 text-center">{item.total_jobs}</td>
-                        <td className="border px-8 py-4 text-right">{new Intl.NumberFormat().format(item.avgSalary.toString())}</td>
+                        {/* <td className="border px-8 py-4 text-right">{new Intl.NumberFormat().format(item.avgSalary.toString())}</td> */}
+                        <td className="border px-8 py-4 text-right">{item.avgSalary.toString()}</td>
                     </tr>
                 ))
             }
