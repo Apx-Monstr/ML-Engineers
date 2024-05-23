@@ -1,4 +1,5 @@
 import './App.css'
+import Graph from './components/Graph'
 import Table from './components/Table'
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="bg-green-500 w-full h-screen flex gap-12 justify-center items-center">
       <Table/>
-      <Table/>
+      <Graph/>
     </div>
   )
 }

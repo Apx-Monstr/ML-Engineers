@@ -10,7 +10,7 @@ interface Data{
 const Table = () => {
     const [data,setData] = useState<Data[]>([])
     useEffect(()=>{
-        axios.get("http://localhost:5000/maintable").then(
+        axios.get("http://apxmonstr.pythonanywhere.com/maintable").then(
             (res)=>{
                 setData(res.data)
                 // console.log(res.data)
